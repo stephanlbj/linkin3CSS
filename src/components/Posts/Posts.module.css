@@ -31,12 +31,14 @@
             display: none;
           }
 
-        & > button:focus {
+        & > button:focus,
+        button:active {
             opacity: 0;
             pointer-events: none;
         }
 
-        & > button:focus + button {
+        & > button:focus + button,
+        button:active + button  {
             display: inline-block;
           }
 
@@ -81,7 +83,8 @@
        }
     }
 
-    & >  :nth-child(2):focus p{
+    & >  :nth-child(2):focus p, 
+    :nth-child(2):active p{
         height: fit-content;
         white-space: normal; 
         overflow: visible;
@@ -114,7 +117,8 @@
    }
 }
 
-.MiddleWrapper  .Buttons > *:focus{
+.MiddleWrapper  .Buttons > *:focus, 
+.MiddleWrapper  .Buttons > *:active{
     
    color: var(--logo-color);
 }
@@ -136,7 +140,8 @@
     transition: opacity 0.9s ease,  max-height 0.9s ease;
   }
 
-  .MiddleWrapper:has(.Buttons > :nth-child(2):focus) >:last-child{
+  .MiddleWrapper:has(.Buttons > :nth-child(2):focus) >:last-child,
+  .MiddleWrapper:has(.Buttons > :nth-child(2):active) >:last-child{
   opacity: 1;
   max-height: 100px;
   max-width: 100%;
@@ -145,7 +150,8 @@
 
   }
   
-  .MiddleWrapper >:last-child:focus-within{
+  .MiddleWrapper >:last-child:focus-within,
+  .MiddleWrapper > :last-child:active{
     margin-block: .6rem;
     opacity: 1;
     max-height: 100px;

@@ -16,7 +16,8 @@
     border: none; 
 }
 
-.BtnWrapper:focus::before{
+.BtnWrapper:focus::before,
+.BtnWrapper:active::before{
     content: "";
         position: absolute;
         height: 100%;

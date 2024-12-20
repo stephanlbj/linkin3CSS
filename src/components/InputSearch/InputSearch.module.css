@@ -35,7 +35,8 @@
     height: min(20px, 80%);
 }
 
-.Container .InputWrapper:focus-within ~ :nth-child(2) {
+.Container .InputWrapper:focus-within ~ :nth-child(2),
+.Container .InputWrapper:active ~ :nth-child(2) {
     display: none;
     pointer-events: none;
 }

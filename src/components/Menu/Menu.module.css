@@ -32,7 +32,8 @@
    
 }
 
-  .Menu_Wrapper > :focus{
+  .Menu_Wrapper > :focus,
+  .Menu_Wrapper > :active{
    border-bottom: 2px solid var(--black-06);
   }
   
