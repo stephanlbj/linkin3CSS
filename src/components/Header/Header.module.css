@@ -1,0 +1,43 @@
+.Container{
+    border-bottom: 1px solid var(--custom-gray);
+    box-sizing: border-box;
+    background-color: white;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    
+    
+    & .Wrapper{
+        display: flex;
+        padding-inline: auto;
+        padding-block: .3rem;
+        gap: .8rem;
+        align-items: center;
+        width: 90%;
+        margin-inline: auto; 
+        justify-content: space-between;
+
+        & .Menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.2rem;
+        }
+        }
+}
+
+
+@media (min-width : 768px ) {
+    .Container .Wrapper{
+        max-width: 90%;
+        margin-inline: auto;
+    }
+
+}
+
+
+
+
+
+

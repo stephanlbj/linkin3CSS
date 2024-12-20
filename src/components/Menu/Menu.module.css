@@ -1,0 +1,50 @@
+.Menu_Wrapper{
+    display: flex;
+    gap: 2rem;
+    display: none;
+
+    & > button {
+      position: relative;
+      border-bottom:none;
+      transition: border-bottom .3s ease-in;
+    }
+
+    & > button:nth-child(5)::after {
+      position: absolute;
+      content: "64";
+      background-color: red;
+      top:0;
+      right: 0;
+      margin-inline-end: .4rem;
+      min-width: 1.1rem;   
+      min-height: 1.1rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: clamp(.4rem, 1.5vw, .6rem);
+      font-weight: 500;
+      padding-inline: .01rem;
+      padding-block: .01rem;
+    }
+
+   
+}
+
+  .Menu_Wrapper > :focus{
+   border-bottom: 2px solid var(--black-06);
+  }
+  
+@media (min-width:768px) {
+    .Menu_Wrapper{
+        padding-inline-start: 12vw;
+        display: flex;
+
+        & button{
+            border: none;
+            background-color: transparent;
+        }
+       
+    }
+}

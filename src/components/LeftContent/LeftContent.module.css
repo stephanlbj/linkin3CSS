@@ -1,0 +1,97 @@
+.SideContainer{
+    border-radius: .8rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    max-height: fit-content; 
+    background-color: white;
+    background-color: var(--logo-color); 
+}
+
+
+   .UserDetail{
+    color: black;
+    z-index: 10;
+    border-bottom: 1px solid #b2babb;
+    background-color: white;  
+    width: 100%;
+    margin-top: 60px;
+    padding-inline: auto;
+    padding-block: .8rem;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &  h2{
+        font-size: clamp(.8rem, 2vw ,1.2rem);
+        cursor: pointer;
+        text-align: center; 
+        width: 80%;
+        margin-inline: auto;
+      }
+    
+    &  p{
+        font-size: clamp(.5rem, 2vw ,.8rem);  
+        color: #808b96;
+        text-align:center;
+        width: 80%;
+        margin-inline: auto;
+    }
+
+    & .BottomDetails{
+        border-top: 1px solid var(--custom-gray);
+        margin-top: 3rem;
+        width: 100%;
+    }
+} 
+
+
+.SideContainer .UserDetail .Logo{
+  width: min(20vw, 50px);
+  height: min(20vw, 50px);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50% -50%;
+  border: 1px solid gray;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+   }
+
+   
+
+  .SideContainer .UserDetail .BottomDetails > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-inline: auto;
+    cursor: pointer;
+    height: fit-content;
+    padding-inline: .4rem;
+  }
+
+  .SideContainer .UserDetail .BottomDetails > *:hover{
+  background-color: aliceblue;
+  }
+
+  .SideContainer .UserDetail .BottomDetails > * > :last-child{
+    color: var(--logo-color);
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .SideContainer .UserDetail .BottomDetails> * > :first-child{
+    display: flex;
+    justify-content: flex-start;
+    font-size: clamp(.4rem, 1.5vw, .64rem);
+  }
+ 
+  
+
+
+ 

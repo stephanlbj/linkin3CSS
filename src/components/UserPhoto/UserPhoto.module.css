@@ -1,0 +1,6 @@
+.UserPhoto{
+    width: min(10vw, 40px);
+    height: min(10vw, 40px);
+    object-fit: cover;  
+}
+

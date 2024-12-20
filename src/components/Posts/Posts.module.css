@@ -1,0 +1,166 @@
+.MiddleWrapper{
+    width: 100%;
+    overflow: hidden; 
+    background-color: white;
+    border-radius: .8rem;
+    margin-block: 2rem;
+    padding-block: .6rem;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;  
+    
+
+    & >:first-child{
+        display: flex;
+        width: 95%;
+        margin-inline: auto;
+        align-items: center;
+        justify-content: space-between; 
+
+        & > button {
+            background-color: transparent;
+            border: none;
+            color: var(--logo-color);
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        & > button:last-of-type {
+            display: none;
+          }
+
+        & > button:focus {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        & > button:focus + button {
+            display: inline-block;
+          }
+
+       & > div {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap:.8rem;
+        
+        & > p{
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        & > p:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        }
+    }
+
+    & .UserLayout{
+        width: min(20vw, 40px);
+        height: min(20vw, 40px);
+    }
+
+    & > :nth-child(2) {
+       max-width: 100%;
+       width: 95%;
+       margin-inline: auto; 
+       transition: height 0.12s ease, padding 0.12s ease; 
+       
+
+       & > p{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.9s ease;
+       }
+    }
+
+    & >  :nth-child(2):focus p{
+        height: fit-content;
+        white-space: normal; 
+        overflow: visible;
+        padding-bottom: 1rem;
+    }
+ 
+}
+
+.MiddleWrapper  .Buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    z-index: 99;
+    border-top: 1px solid var(--custom-gray);
+    padding-block-start: 1rem;
+}
+
+.MiddleWrapper .PostImage{
+ width: 100%;
+ aspect-ratio: 16 / 9;
+ position: relative;
+ overflow: hidden;
+ 
+   & .ImageLayout{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+   }
+}
+
+.MiddleWrapper  .Buttons > *:focus{
+    
+   color: var(--logo-color);
+}
+
+.MiddleWrapper .Buttons {
+     max-width: 100%; 
+}
+  
+  .MiddleWrapper > :last-child{
+     width: 100%; 
+     margin: 0 auto;
+    max-height: 0;
+    overflow: hidden; 
+    pointer-events: none; 
+    display: flex;  
+    justify-content: center; 
+    align-items: center;
+    margin-block: 0; 
+    transition: opacity 0.9s ease,  max-height 0.9s ease;
+  }
+
+  .MiddleWrapper:has(.Buttons > :nth-child(2):focus) >:last-child{
+  opacity: 1;
+  max-height: 100px;
+  max-width: 100%;
+  margin-block: .9rem;
+  pointer-events: auto; 
+
+  }
+  
+  .MiddleWrapper >:last-child:focus-within{
+    margin-block: .6rem;
+    opacity: 1;
+    max-height: 100px;
+    pointer-events: auto; 
+  }
+
+  
+
+
+
+  
+
+
+
+ 
+ 
+  
+

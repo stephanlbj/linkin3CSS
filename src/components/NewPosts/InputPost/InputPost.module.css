@@ -1,0 +1,14 @@
+.InputWrapper{
+    width: 80%;
+    padding-block: .8rem;
+    border-radius: 3rem;
+    padding-inline: .8rem;
+    border: 1px solid var(--custom-gray);
+    
+}
+
+.InputWrapper:focus{
+    outline-color: var(--logo-color);
+}
+
+

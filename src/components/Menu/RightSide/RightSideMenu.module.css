@@ -1,0 +1,15 @@
+.RightWrapper{
+display: none;
+}
+
+@media (min-width: 1024px) {
+    .RightWrapper{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 1.2rem;
+     border-left: 1px solid var(--custom-gray);
+     padding-left: 1rem;
+    }
+}
+

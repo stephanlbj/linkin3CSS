@@ -1,0 +1,18 @@
+.Wrapper{
+display: flex;
+align-items: center;
+gap: .6rem;
+width: 100%;
+
+& button{
+    background-color: transparent;
+    border: none;
+}
+}
+
+.Logo{
+background-color: var(--logo-color);
+border-radius: 2px;
+color: white;
+}
+

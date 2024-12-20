@@ -1,0 +1,11 @@
+.IconsWrapper{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+@media (min-width:768px) {
+    .IconsWrapper{
+        display: none;
+    }
+}
